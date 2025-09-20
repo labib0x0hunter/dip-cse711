@@ -3,17 +3,17 @@
 ---
 **Mac Setup**
 - install opencv
-```
+```bash
 brew install opencv
 ```
 
 - verify
-```
+```bash
 pkg-config --modversion opencv4
 ```
 
 - code `dip.cpp`
-```
+```c++
 #include <opencv2/opencv.hpp>
 #include <iostream>
 using namespace cv;
@@ -31,7 +31,18 @@ int main() {
 ```
 
 - compile & run
-```
+```bash
 g++ -std=c++20 dip.cpp -o dip `pkg-config --cflags --libs opencv4` && (./dip)
 ```
 ---
+
+**python3**
+- create virtual environment
+```bash
+python3 -m venv opencv_dip
+source opencv_dip/bin/activate
+```
+- install opencv
+```bash
+pip install numpy-2.2.6, opencv-python-4.12.0.88
+```
