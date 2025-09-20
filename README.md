@@ -46,3 +46,9 @@ source opencv_dip/bin/activate
 ```bash
 pip install numpy-2.2.6, opencv-python-4.12.0.88
 ```
+
+---
+**Topics**
+- image negative
+- log transformation
+- gamma transformation
